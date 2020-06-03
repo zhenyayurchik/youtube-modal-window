@@ -1,0 +1,96 @@
+.block-one{
+    background-image: url(../../build/img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    text-align: center;
+    position: relative;
+
+    .btn {
+        background: none;
+        border: none;
+
+        &:hover,
+        &:focus,
+        &:active {
+            outline: none;
+            transform: scale(1.2);
+            transition:all 0.3s ease;
+            cursor: pointer;
+        }
+    }
+
+    .modal-background{
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+
+      
+    .modal-content {
+        width: 75%;
+        position: relative;
+
+        @media screen  and (min-width: 2400px) {
+        width: 55%;
+        }
+        @media screen  and (max-width: 1024px) {
+        width: 90%;
+        }
+
+        &__responsive-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            }
+        }
+
+        &__close-btn {
+            position: absolute;
+            top: -45px;
+            right: 0;
+            font-size: 42px;
+            color: #666;
+            transform: rotate(45deg);
+            cursor: pointer;
+
+            &:hover,
+            &:focus {
+                color: #fff;
+                transition:all 0.3s ease;
+                outline: none;
+            }
+
+        }
+    }
+
+    // .modal-window {
+    //     width: 95%;
+    //     height: auto;
+    //     text-align: center;
+    //     overflow: hidden;
+    //     padding-top: 56.25%;
+    //     position: relative;
+
+
+
+
+
+
+    
+}
